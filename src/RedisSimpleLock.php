@@ -33,7 +33,6 @@ class RedisSimpleLock implements Lock
         $this->logger     = $logger ?: new NullLogger;
         $this->id         = mt_rand();
         register_shutdown_function($closure = $this->releaseClosure());
-        pcntl_signal(SIGINT, $closure);
     }
 
     public function acquire()
