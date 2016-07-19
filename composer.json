@@ -1,5 +1,5 @@
 {
-    "name": "texthtml/php-lock-redis",
+    "name": "cubilog/php-lock-redis",
     "description" : "redis lock",
     "license": "aGPLv3",
     "type": "library",
